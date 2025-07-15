@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Icons / Fonts -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- App stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── Header ──────────────────────────────────────────────── -->
+  <header>
+    <h1>What Weather</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Weather</a></li>
+        <li><a href="#">Posts</a></li>
+        <li><a href="#">Locations</a></li>
+      </ul>
+    </nav>
+
+    <div class="humberg-menu">
+      <i class="uil uil-bars"></i>
+    </div>
+
+    <div class="menu-content">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Weather</a></li>
+      <li><a href="#">Posts</a></li>
+      <li><a href="#">Locations</a></li>
+    </div>
+  </header>
+
+  <!-- ─── Search Section ──────────────────────────────────────── -->
+  <section class="input-section">
+    <div class="search-bar">
+      <input type="text" class="input-city" placeholder="Enter City Name Here" />
+      <i class="uil uil-search city-submit"></i>
+    </div>
+
+    <div class="separator"></div>
+
+    <button type="button" class="input-location">Use current location</button>
+  </section>
+
+  <!-- ─── Current Weather & Hourly ────────────────────────────── -->
+  <section class="current-weather-section">
+    <div class="current-weather-card"></div>
+
+    <div class="container">
+      <h2 class="hourly-heading">Today's highlight</h2>
+      <p class="hourly-des">
+        Today's weather updates are provided every 3 hours, keeping you informed throughout the day.
+      </p>
+
+      <!-- Hourly Swiper -->
+      <div class="swiper hourlySwiper">
+        <div class="swiper-wrapper" id="hourly-section"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Five‑Day Forecast ───────────────────────────────────── -->
+  <!-- <section class="weakly-weather-section">
+    <h1>5‑Day Weather Forecast</h1>
+
+    Weekly Swiper -->
+    <!-- <div class="swiper weeklySwiper">
+      <div class="swiper-wrapper" id="weakly-weather-container"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section> -->
+
+  <!-- ─── Footer ──────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-container">
+      <div class="company">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Photos</a></li>
+        </ul>
+      </div>
+
+      <div class="reference">
+        <h2>Reference</h2>
+        <ul>
+          <li><a href="#">Legend</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Article</a></li>
+        </ul>
+      </div>
+
+      <div class="support">
+        <h2>Support</h2>
+        <div class="mobile">
+          <i class="uil uil-phone-pause"></i>
+          <h3>1800‑290‑190</h3>
+        </div>
+        <div class="mail">
+          <i class="uil uil-envelope-alt"></i>
+          <p>support@example.com</p>
+        </div>
+      </div>
+
+      <div class="getApp">
+        <h2>Apps & Downloads</h2>
+        <ul>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">iOS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+    <p class="cpy">2023 © WhatWeather. All rights reserved</p>
+  </footer>
+
+  <!-- ─── Scripts ─────────────────────────────────────────────── -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>
